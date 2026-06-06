@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Nur Azira's Resume</title>
+    <style>
+
+        * { box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #8db6d3; margin: 0; padding: 0; }
+        .header-banner { background-color: #09077c; color: white; text-align: center; padding: 25px 0; }
+        .header-banner h1 { margin: 0; font-size: 2rem; }
+        .header-banner p { margin: 5px 0 0 0; font-size: 0.9rem; color: #dddddd; }
+        
+        nav { display: flex; justify-content: center; background-color: #f3f054; flex-wrap: wrap; padding: 5px 0; }
+        nav a, .dropdown .dropbtn { color: rgb(255, 255, 255); text-decoration: none; padding: 14px 20px; font-size: 0.95rem; background: none; border: none; cursor: pointer; font-family: inherit; transition: background 0.3s; }
+        nav a:hover, .dropdown:hover .dropbtn { background-color: #041568; }
+
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; background-color: #333333; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: white !important; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+        .dropdown-content a:hover { background-color: #84c4ff; color: white !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .page-border { border: 20px solid #b3d1e6; border-radius: 12px; }
+        .main-container { max-width: 950px; margin: 40px auto; background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+        .page-title { color: #09077c; font-size: 2rem; margin-top: 0; margin-bottom: 25px; border-bottom: 2px solid #f3f054; padding-bottom: 10px; }
+
+
+        .skills-section {margin-bottom: 30px;}
+        .skill-name {font-size: 1.1rem; font-weight: bold; color: #333; margin-bottom: 8px;}
+        .skill-bar-bg { background-color: #e0e0e0;  border-radius: 20px; overflow: hidden; margin-bottom: 20px; height: 25px;}
+        .skill-bar-fill { background-color: #09077c; height: 100%; border-radius: 20px; display: flex; align-items: center; justify-content: flex-end; padding-right: 15px;  color: white; font-weight: bold; font-size: 0.85rem;  }
+
+        .fill-alt { background-color: #f3f054; color: #333; }
+
+        .btn-container { margin-top: 40px; display: flex; justify-content: flex-start; }
+        .btn-back { display: inline-block; background-color: #09077c; color: #ffffff; text-decoration: none; padding: 12px 24px; font-size: 0.9rem; font-weight: bold; border-radius: 5px; }
+        .btn-back:hover { background-color: #333333; }
+   
+   </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>Nur Azira's Resume</h1>
+        <p>Information Science | UiTM Kampus Rembau</p>
+    </div>
+
+    <nav>
+        <a href="home.html">Profile</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">About Me ▼</button>
+            <div class="dropdown-content">
+                <a href="personal_life.html">Personal Life</a>
+                <a href="my_family.html">My Family</a>
+                <a href="my_friends.html">My Friends</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">My Interests ▼</button>
+            <div class="dropdown-content">
+                <a href="myhobbies.html">My Hobbies</a>
+                <a href="favsong.html">Favorite Songs</a>
+                <a href="favmovies.html">Favorite Movies</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Goals & Quotes ▼</button>
+            <div class="dropdown-content">
+                <a href="futuregoals.html">Future Goals</a>
+                <a href="myquotes.html">My Quotes</a>
+            </div>
+        </div>
+
+        <a href="skills.html">Skills</a>
+        <a href="educationnew.html">Education Timeline</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">My Gallery ▼</button>
+            <div class="dropdown-content">
+                <a href="photogallery.html">Photos</a>
+                <a href="videogallery.html">Videos</a>
+            </div>
+        </div>
+
+        <a href="contactme.html">Contact</a>
+    </nav>
+
+    <div class="page-border">
+        <div class="main-container">
+            <h2 class="page-title">My Skills</h2>
+            
+            <div class="skills-section">
+                <div class="skill-name">HTML & CSS (Web Design)</div>
+                <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 70%;">70%</div>
+                </div>
+
+                <div class="skill-name">Microsoft Office (Word, Excel, PPT)</div>
+                <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 80%;">80%</div>
+                </div>
+
+                <div class="skill-name">Communication & Teamwork</div>
+                <div class="skill-bar-bg">
+                    <div class="skill-bar-fill fill-alt" style="width: 95%;">95%</div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="home.html" class="btn-back">Back to Profile</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

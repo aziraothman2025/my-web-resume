@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Timeline - Nur Azira's Resume</title>
+    <style>
+
+        * { box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #8db6d3; margin: 0; padding: 0; }
+        
+        .header-banner { background-color: #09077c; color: white; text-align: center; padding: 25px 0; }
+        .header-banner h1 { margin: 0; font-size: 2rem; }
+        .header-banner p { margin: 5px 0 0 0; font-size: 0.9rem; color: #dddddd; }
+        
+
+
+        nav { display: flex; justify-content: center; background-color: #f3f054; flex-wrap: wrap; padding: 5px 0; border-bottom: 2px solid #f3f054; }
+        nav a, .dropdown .dropbtn { color: rgb(255, 255, 255); text-decoration: none; padding: 14px 20px; font-size: 0.95rem; background: none; border: none; cursor: pointer; font-family: inherit; transition: background 0.3s; font-weight: normal; }
+        nav a:hover, .dropdown:hover .dropbtn { background-color: #041568; color: rgb(255, 255, 255) !important; }
+
+
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; background-color: #333333; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: white !important; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+        .dropdown-content a:hover { background-color: #84c4ff; color: white !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .page-border { border: 20px solid #b3d1e6; border-radius: 12px; }
+        .main-container { max-width: 1050px; margin: 40px auto; background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+        .page-title { color: #09077c; font-size: 2rem; margin-top: 0; margin-bottom: 10px; }
+        .page-subtitle { color: #555; font-size: 1.05rem; margin-top: 0; margin-bottom: 40px; border-bottom: 2px solid #f3f054; padding-bottom: 15px; line-height: 1.6; }
+
+        .timeline-container { position: relative; }
+        
+        .edu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            position: relative;}
+
+        .edu-item::after {
+            content: '';
+            position: absolute;
+            left: 50px; 
+            top: 100px;
+            bottom: -55px;
+            width: 2px;
+            border-left: 2px dashed #999;
+            z-index: 1;}
+
+        .edu-item::before {
+            content: '';
+            position: absolute;
+            right: 50px;
+            top: 100px;
+            bottom: -55px;
+            width: 2px;
+            border-left: 2px dashed #999;
+            z-index: 1;}
+        
+        .edu-item:last-child::after, .edu-item:last-child::before { display: none; }
+
+        .edu-img-left, .edu-img-right {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #8db6d3;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 2;
+            background-color: #fff; }
+
+        .edu-info {
+            flex: 1;
+            padding: 0 30px;}
+        
+        .edu-info h3 { color: #003366; margin: 0 0 10px 0; font-size: 1.4rem; }
+        .edu-details { margin-left: 5px; }
+        .edu-details p { margin: 6px 0; color: #444; line-height: 1.5; font-size: 0.95rem; }
+        .edu-details strong { color: #333; display: inline-block; width: 120px; }
+
+
+        .btn-container { margin-top: 40px; display: flex; justify-content: flex-start; }
+        .btn-back { display: inline-block; background-color: #003366; color: #ffffff; text-decoration: none; padding: 12px 24px; font-size: 0.9rem; font-weight: bold; border-radius: 5px; }
+        .btn-back:hover { background-color: #333333; }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>Nur Azira's Resume</h1>
+        <p>Information Science | UiTM Kampus Rembau</p>
+    </div>
+
+    <nav>
+        <a href="home.html">Profile</a>
+        
+
+        <div class="dropdown">
+            <button class="dropbtn">About Me ▼</button>
+            <div class="dropdown-content">
+                <a href="personal_life.html">Personal Life</a>
+                <a href="my_family.html">My Family</a>
+                <a href="my_friends.html">My Friends</a>
+            </div>
+        </div>
+        
+
+        <div class="dropdown">
+            <button class="dropbtn">My Interests ▼</button>
+            <div class="dropdown-content">
+                <a href="myhobbies.html">My Hobbies</a>
+                <a href="favsong.html">Favorite Songs</a>
+                <a href="favmovies.html">Favorite Movies</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Goals & Quotes ▼</button>
+            <div class="dropdown-content">
+                <a href="futuregoals.html">Future Goals</a>
+                <a href="myquotes.html">My Quotes</a>
+            </div>
+        </div>
+
+        <a href="skills.html">Skills</a>
+        <a href="educationnew.html">Education Timeline</a>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">My Gallery ▼</button>
+            <div class="dropdown-content">
+                <a href="photogallery.html">Photos</a>
+                <a href="videogallery.html">Videos</a>
+            </div>
+        </div>
+
+        <a href="contactme.html">Contact</a>
+    </nav>
+
+
+    <div class="page-border">
+        <div class="main-container">
+            <h2 class="page-title">My Educational Journey</h2>
+            <p class="page-subtitle">Determination is a passionate and within continuous pursuit of belief in continuous growth and learning. A deep interest in information management, creativity, and design has guided me throughout the journey.</p>
+            
+            <div class="timeline-container">
+                
+                <div class="edu-item">
+                    <img src="tajlogonew2.png" alt="TAJ logo" class="edu-img-left">
+                    
+                    <div class="edu-info">
+                        <h3>Kindergarten</h3>
+                        <div class="edu-details">
+                            <p><strong>School:</strong> Tadika Agama Johor TAJ (2010-2011)</p>
+                            <p><strong>Role/Position:</strong> Class Monitor</p>
+                            <p><strong>Awards:</strong> Best Academic Performance</p>
+                        </div>
+                    </div>
+                    
+                    <img src="kindergatenTAJ.jpeg" alt="Azira Waktu Tadika" class="edu-img-right">
+                </div>
+
+                <div class="edu-item">
+                    <img src="skbnlogo.png" alt="Logo SK Bukit Naning" class="edu-img-left">
+                    
+                    <div class="edu-info">
+                        <h3>Primary School</h3>
+                        <div class="edu-details">
+                            <p><strong>School:</strong> SK Bukit Naning, Muar, Johor (2012-2017)</p>
+                            <p><strong>Role/Position:</strong> School Superintendent</p>
+                            <p><strong>Awards:</strong> Excellent Academic Performance Award</p>
+                        </div>
+                    </div>
+                    
+                    <img src="aziraskbn.jpeg" alt="Azira Waktu SK" class="edu-img-right">
+                </div>
+
+                <div class="edu-item">
+                    <img src="smkbnlogo.jpg" alt="Logo SMK Bukit Naning" class="edu-img-left">
+                    
+                    <div class="edu-info">
+                        <h3>Secondary School</h3>
+                        <div class="edu-details">
+                            <p><strong>School:</strong> SMK Bukit Naning (2018-2022)</p>
+                            <p><strong>Role/Position:</strong> Library Prefect</p>
+                            <p><strong>Awards:</strong> SPM Excellent Candidate</p>
+                        </div>
+                    </div>
+                    
+                    <img src="azirasmkbn.jpeg" alt="Azira Waktu SMK" class="edu-img-right">
+                </div>
+
+                <div class="edu-item">
+                    <img src="studilogo.jpg" alt="Logo SMK Tun Dr. Ismail" class="edu-img-left">
+                    
+                    <div class="edu-info">
+                        <h3>Pre-University (STPM)</h3>
+                        <div class="edu-details">
+                            <p><strong>School:</strong> SMK Tun Dr. Ismail (2023-2025)</p>
+                            <p><strong>Role/Position:</strong> Academic Bureau</p>
+                            <p><strong>Awards:</strong> Anugerah Pelajar Cemerlang STPM 2025</p>
+                        </div>
+                    </div>
+                    
+                    <img src="aziratingkatan6.jpeg" alt="Azira Waktu STPM" class="edu-img-right">
+                </div>
+
+                <div class="edu-item">
+                    <img src="uitmrembau.png" alt="Logo UiTM" class="edu-img-left">
+                    
+                    <div class="edu-info">
+                        <h3>Bachelor's Degree</h3>
+                        <div class="edu-details">
+                            <p><strong>University:</strong> Universiti Teknologi MARA (UiTM) Kampus Rembau (2025-Present)</p>
+                            <p><strong>Course:</strong> Bachelor of Information Science (Hons.)</p>
+                            <p><strong>Status:</strong> Active Student, AJK Ptar Buddies Club, Dean's List Part 1</p>
+                        </div>
+                    </div>
+                    
+                    <img src="firstdaydegree.jpeg" alt="Azira Waktu Degree" class="edu-img-right">
+                </div>
+
+            </div> 
+            
+            <div class="btn-container">
+                <a href="home.html" class="btn-back">Back to Profile</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

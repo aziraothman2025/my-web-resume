@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends - Nur Azira's Resume</title>
+    <style>
+    
+        * { box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #8db6d3; margin: 0; padding: 0; }
+        
+        .header-banner { background-color: #09077c; color: white; text-align: center; padding: 25px 0; }
+        .header-banner h1 { margin: 0; font-size: 2rem; }
+        .header-banner p { margin: 5px 0 0 0; font-size: 0.9rem; color: #dddddd; }
+        
+
+        nav { display: flex; justify-content: center; background-color: #f3f054; flex-wrap: wrap; padding: 5px 0; }
+        nav a, .dropdown .dropbtn { color: rgb(255, 255, 255); text-decoration: none; padding: 14px 20px; font-size: 0.95rem; background: none; border: none; cursor: pointer; font-family: inherit; transition: background 0.3s; }
+        nav a:hover, .dropdown:hover .dropbtn { background-color: #041568; }
+
+
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; background-color: #333333; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: white !important; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+        .dropdown-content a:hover { background-color: #84c4ff; color: white !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+
+        .page-border { border: 20px solid #b3d1e6; border-radius: 12px; }
+        .main-container { max-width: 950px; margin: 40px auto; background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+        .page-title { color: #003366; font-size: 2rem; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #f3f054; padding-bottom: 10px; }
+        
+        .intro-text { font-size: 1.05rem; line-height: 1.8; color: #333333; margin-bottom: 30px; }
+
+
+        .friends-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        .friend-card { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .friend-card img { width: 100%; height: 220px; object-fit: cover; }
+        .friend-info { padding: 20px; text-align: center; }
+        .friend-info h3 { color: #003366; margin: 0 0 10px 0; font-size: 1.2rem; }
+        .friend-info p { margin: 0; color: #666666; font-size: 0.95rem; line-height: 1.5; }
+
+        .btn-container { margin-top: 40px; display: flex; justify-content: flex-start; }
+        .btn-back { display: inline-block; background-color: #003366; color: #ffffff; text-decoration: none; padding: 12px 24px; font-size: 0.9rem; font-weight: bold; border-radius: 5px; }
+        .btn-back:hover { background-color: #333333; }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>Nur Azira's Resume</h1>
+        <p>Information Science | UiTM Kampus Rembau</p>
+    </div>
+
+    <nav>
+        <a href="home.html">Profile</a>
+        
+
+        <div class="dropdown">
+            <button class="dropbtn">About Me ▼</button>
+            <div class="dropdown-content">
+                <a href="personal_life.html">Personal Life</a>
+                <a href="my_family.html">My Family</a>
+                <a href="my_friends.html">My Friends</a>
+            </div>
+        </div>
+        
+
+        <div class="dropdown">
+            <button class="dropbtn">My Interests ▼</button>
+            <div class="dropdown-content">
+                <a href="myhobbies.html">My Hobbies</a>
+                <a href="favsong.html">Favorite Songs</a>
+                <a href="favmovies.html">Favorite Movies</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Goals & Quotes ▼</button>
+            <div class="dropdown-content">
+                <a href="futuregoals.html">Future Goals</a>
+                <a href="myquotes.html">My Quotes</a>
+            </div>
+        </div>
+
+        <a href="skills.html">Skills</a>
+        <a href="educationnew.html">Education Timeline</a>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">My Gallery ▼</button>
+            <div class="dropdown-content">
+                <a href="photogallery.html">Photos</a>
+                <a href="videogallery.html">Videos</a>
+            </div>
+        </div>
+
+        <a href="contactme.html">Contact</a>
+    </nav>
+
+
+    <div class="page-border">
+        <div class="main-container">
+            <h2 class="page-title">My Friends</h2>
+            <p class="intro-text">Good friends make the good times better and the hard times easier. Here are the wonderful friends who always stick by my side, through thick and thin, creating beautiful university memories together.</p>
+            
+            <div class="friends-grid">
+                <div class="friend-card">
+                    <img src="degreeclassmate.jpeg" alt="degree classmate">
+                    <div class="friend-info">
+                        <h3>N5SI2602A</h3>
+                        <p>A great companion who always shares laughter, supports my goals, and makes assignments feel much lighter.</p>
+                    </div>
+                </div>
+
+                <div class="friend-card">
+                    <img src="form6classmate.jpeg" alt="FORM 6 classmate">
+                    <div class="friend-info">
+                        <h3>6S3A 2024/2025</h3>
+                        <p>A cheerful and optimistic friend who brings positivity to every situation and encourages me to keep going.</p>
+                    </div>
+                </div>
+
+                <div class="friend-card">
+                    <img src="bestfriend.jpeg" alt="best friend">
+                    <div class="friend-info">
+                        <h3>Amira & Athirah</h3>
+                        <p>My best friends since childhood which is my siblings, always there to support and uplift me through any challenge.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="home.html" class="btn-back">Back to Profile</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
